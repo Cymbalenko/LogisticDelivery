@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/network_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/network"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+                android:background="#D5CACA"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/service_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/service"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05" >
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/service_orders_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:theme="@style/MySwitch"
+                    android:layout_marginEnd="8dp"
+                    android:enabled="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/orders"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on"
+                    app:showText="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/service_orders_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reboot_phone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="invisible"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/service_orders_switch" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/sending_gps_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:theme="@style/MySwitch"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on"
+                    android:text="@string/sending_gps"
+                    app:showText="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/service_gps_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/reboot_phone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sending_gps_switch" />
+            </androidx.constraintlayout.widget.ConstraintLayout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="0.05">
+
+
+                <TextView
+                    android:id="@+id/internet_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:text="@string/internet"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:showText="true" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/internet_ok_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_launcher_ok_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/internet_switch"
+                    app:layout_constraintEnd_toStartOf="@+id/internet_error_text_view"
+                    app:layout_constraintTop_toTopOf="@+id/internet_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/internet_error_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:src="@drawable/ic_launcher_error_foreground"
+                    app:layout_constraintBottom_toBottomOf="@+id/internet_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/internet_ok_ImageView" />
+
+                <TextView
+                    android:id="@+id/internet_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/network_error"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/internet_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/internet_switch" />
+
+                <TextView
+                    android:id="@+id/gps_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:text="@string/gps"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/internet_switch"
+                    app:showText="true" />
+
+                <TextView
+                    android:id="@+id/gps_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/gps_error"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/gps_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/gps_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/gps_ok_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_ok_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/gps_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/gps_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/gps_error_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_error_foreground"
+                    app:layout_constraintBottom_toBottomOf="@+id/gps_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_error_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_error_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/gps_switch" />
+
+                <TextView
+                    android:id="@+id/connect_to_server_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:text="@string/connect_to_server"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gps_switch"
+                    app:showText="true" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/connect_to_server_ok_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_ok_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/connect_to_server_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/connect_to_server_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/connect_to_server_error_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_error_foreground"
+                    app:layout_constraintBottom_toBottomOf="@+id/connect_to_server_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_error_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_error_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/connect_to_server_switch" />
+                <TextView
+                    android:id="@+id/connect_to_server_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/network_api_error"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/connect_to_server_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/connect_to_server_switch" />
+
+                <TextView
+                    android:id="@+id/service_orders_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:text="@string/orders"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sending_gps_switch"
+                    app:showText="true" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/service_orders_ok_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_ok_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/service_orders_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/service_orders_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/service_orders_error_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_error_foreground"
+                    app:layout_constraintBottom_toBottomOf="@+id/service_orders_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/connect_to_server_error_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/connect_to_server_error_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/service_orders_switch" />
+
+                <TextView
+                    android:id="@+id/service_orders_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reboot_phone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/service_orders_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/service_orders_switch" />
+
+                <TextView
+                    android:id="@+id/sending_gps_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="true"
+                    android:text="@string/sending_gps"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/connect_to_server_switch"
+                    app:showText="true" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/sending_gps_ok_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_ok_foreground"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/sending_gps_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/internet_ok_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/sending_gps_switch" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:id="@+id/sending_gps_error_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher_error_foreground"
+                    app:layout_constraintBottom_toBottomOf="@+id/sending_gps_switch"
+                    app:layout_constraintEnd_toEndOf="@+id/connect_to_server_error_ImageView"
+                    app:layout_constraintStart_toStartOf="@+id/connect_to_server_error_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/sending_gps_switch" />
+
+                <TextView
+                    android:id="@+id/service_gps_error_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reboot_phone"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/sending_gps_switch"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/sending_gps_switch" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/statictics_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/statictics"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/on_shift_switch"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/on_shift_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:enabled="true"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on"
+                    android:textSize="14sp"
+                    android:theme="@style/MySwitch"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/textView"
+                    app:showText="true" />
+
+
+                <Button
+                    android:id="@+id/button_start_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/green_i"
+                    android:text="@string/start_shift"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <Button
+                    android:id="@+id/button_end_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/red_i"
+
+                    android:text="@string/end_shift"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                <Button
+                    android:id="@+id/button_On_shift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/yelooy_i"
+
+                    android:text="@string/On_confirmation"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <ProgressBar
+                    android:id="@+id/loading_shift_progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="8dp"
+                    android:indeterminateDrawable="@drawable/spinner_ring"
+                    android:indeterminateTint="@color/red_i"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/button_start_shift"
+                    app:layout_constraintEnd_toEndOf="@+id/button_start_shift"
+                    app:layout_constraintStart_toStartOf="@+id/button_start_shift"
+                    app:layout_constraintTop_toTopOf="@+id/button_start_shift" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_order_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/info_order"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/orders_today_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/orders_today"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/orders_today_value_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/_0"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/orders_today_text_view"
+                    app:layout_constraintStart_toEndOf="@+id/orders_today_text_view"
+                    app:layout_constraintTop_toTopOf="@+id/orders_today_text_view" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/new_order_info_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/new_order_info"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLoadOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузить Заказ"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузить GPS рестораны"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoadOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузить рестораны"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

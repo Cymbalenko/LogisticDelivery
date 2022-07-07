@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="To_client">To the client</string>
+    <string name="ReceptNoText">Check number</string>
+    <string name="Delivered">Delivered</string>
+    <string name="NameClient">Client name</string>
+    <string name="Amount">amount</string>
+    <string name="Phone">phone</string>
+    <string name="TimeDelivery">Time of delivery</string>
+    <string name="AdressClient">Client address</string>
+    <string name="CommentClient">Customer comment</string>
+    <string name="DeliveredRestaurant">In place</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="error_login_incorrect_credentials">Incorrect login or password</string>
+    <string name="network">Network</string>
+    <string name="network_error">Turn on the internet</string>
+    <string name="gps_error">Turn on geolocation</string>
+    <string name="network_api_error">Check your settings</string>
+    <string name="service">Services</string>
+    <string name="reboot_phone">Restart your phone</string>
+    <string name="statictics">Statistics</string>
+    <string name="orders_today">Orders today:</string>
+    <string name="_0">0</string>
+    <string name="internet">Internet</string>
+    <string name="gps">Geolocation</string>
+    <string name="connect_to_server">Server connection</string>
+    <string name="orders">Orders</string>
+    <string name="sending_gps">Send GPS</string>
+    <string name="on_shift_switch">On shift</string>
+    <string name="end_shift">End shift</string>
+    <string name="start_shift">Become a shift</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="no_phone">Нет телефона</string>
+    <string name="no_name">Нет имени</string>
+    <string name="Change">Change</string>
+    <string name="staff_id">staff_id</string>
+    <string name="search">Search</string>
+    <string name="info_order">Order information</string>
+    <string name="new_order_info">A new order has appeared!</string>
+    <string name="order_not_found">Order not found</string>
+    <string name="to_exit_shift">To exit shift?</string>
+</resources>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Mamamia Logistics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="menu_actual_order">Current orders</string>
+    <string name="menu_history_order">History of orders</string>
+    <string name="Обновить">Refresh</string>
+    <string name="To_client">To the client</string>
+    <string name="ReceptNoText">Check number</string>
+    <string name="Delivered">Delivered</string>
+    <string name="NameClient">Client name</string>
+    <string name="TenderType">Payment type</string>
+    <string name="Amount">Amount</string>
+    <string name="Phone">Phone</string>
+    <string name="TimeDelivery">Time of delivery</string>
+    <string name="AdressClient">Client address</string>
+    <string name="CommentClient">Customer comment</string>
+    <string name="To_restaurant">In a restaurant</string>
+    <string name="TimeRestaurant">Arrival time at the restaurant</string>
+    <string name="PhoneClient">Customer phone</string>
+    <string name="PhoneRestaurant">Restaurant phone</string>
+    <string name="DeliveredRestaurant">In place</string>
+    <string name="AdressRestaurant">Restaurant address</string>
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="error_login_incorrect_credentials">Incorrect login or password</string>
+    <string name="title_activity_login">Mamamia Driver</string>
+    <string name="error_driver_not_found">A courier with this username and / or password was not found</string>
+    <string name="network">Network</string>
+    <string name="network_error">Turn on the internet</string>
+    <string name="gps_error">Turn on geolocation</string>
+    <string name="network_api_error">Check your settings</string>
+    <string name="service">Services</string>
+    <string name="reboot_phone">Restart your phone</string>
+    <string name="statictics">Statistics</string>
+    <string name="orders_today">Orders today:</string>
+    <string name="_0">0</string>
+    <string name="internet">Internet</string>
+    <string name="gps">Geolocation</string>
+    <string name="connect_to_server">Server connection</string>
+    <string name="orders">Orders</string>
+    <string name="sending_gps">Send GPS</string>
+    <string name="on_shift_switch">On shift</string>
+    <string name="end_shift">End shift</string>
+    <string name="start_shift">Take over</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="title_warning">Warning</string>
+    <string name="title_info">Notification</string>
+    <string name="succes">Succes</string>
+    <string name="change_courier">Change courier</string>
+    <string name="exit">Exit</string>
+    <string name="no_phone">Нет телефона</string>
+    <string name="no_name">Нет имени</string>
+    <string name="new_order">New order</string>
+    <string name="change_phone">Change phone number</string>
+    <string name="Change">Change</string>
+    <string name="phone_error">Error! The phone number must contain 10 digits! For example 0631234567</string>
+    <string name="moto_driver">Moto driver</string>
+    <string name="auto_driver">Auto driver</string>
+    <string name="walking_driver">Walking driver</string>
+    <string name="staff_id">staff_id</string>
+    <string name="search">Search</string>
+    <string name="time_delivered">Time delivered</string>
+    <string name="info_order">info_order</string>
+    <string name="new_order_info">A new order has appeared!</string>
+    <string name="order_not_found">Orders not found</string>
+    <string name="Ok">Ok</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Cancel">Cancel</string>
+    <string name="to_exit_shift">To exit shift?</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="Left">Left</string>
+    <string name="On_confirmation">On confirmation</string>
+    <string name="on_shift_no">Request Rejected! Contact the manager for information !!!</string>
+    <string name="on_shift_yes">Request Approved! Have a nice work!!!</string>
+    <string name="substitution">Substitution</string>
+    <string name="late_order">Attention, you are late to order!</string>
+    <string name="traffic_accident">Traffic Accident</string>
+    <string name="courier_cancelled">Courier Cancelled</string>
+    <string name="restaurant_lateness">Restaurant Lateness</string>
+    <string name="courier_lateness">Courier Lateness</string>
+</resources>

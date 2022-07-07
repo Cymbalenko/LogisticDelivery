@@ -1,0 +1,99 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="server"
+        android:title="@string/pref_header_server">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_server_address"
+            android:inputType="textUri"
+            android:key="address"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_address" />
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_server_port"
+            android:inputType="number"
+            android:key="port"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_port" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_password"
+            android:inputType="textPassword"
+            android:key="password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_password" />
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_password"
+            android:inputType=""
+            app:enabled="false"
+            app:isPreferenceVisible="false"
+            android:key="pref_driver_staffId"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_password" />
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_password"
+            android:inputType=""
+            app:enabled="false"
+            app:isPreferenceVisible="false"
+            android:key="pref_driver_password"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_server_password" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="pref_key_additional"
+        android:title="@string/title_info">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="internet"
+            android:title="@string/internet"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="gps"
+            android:title="@string/gps"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="new_order"
+            android:title="@string/new_order"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="sending_gps"
+            android:title="@string/sending_gps"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_additional_new"
+        android:title="Дополнительно">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_url_to_update"
+            android:inputType="textUri"
+            android:key="url_to_update"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Url для поиска обновлений" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
